@@ -3,6 +3,7 @@
 This app is designed to help users find the closest / cheapest Energy Drink / Coffee.
 
  ##Minimup Viable Product
+
 [ ] "Caffeine Buddy" will find the closest Energy Drink / Coffee to my location, displayed with markers on Google maps as well as a list filtered by distance / cost.
 
 [ ]  As a user I want to be able to log in to verify my identity.
