@@ -24,7 +24,7 @@ This app is designed to help users find the closest / cheapest Energy Drink / Co
 
  [ ] As a user I want to be able to search energy drinks individually as well as "2 For.." deals.  (2 Monsters for $2.99).
 
- [x] As a user I want to be able to accumulate points when I post / update.  My points will be displayed next to my user name.
+ [] As a user I want to be able to accumulate points when I post / update.  My points will be displayed next to my user name.
 
 
  ###Technologies Used
