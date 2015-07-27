@@ -1,1 +1,23 @@
-<h1>index static pages</h1>
+<div class="container">
+  <h1>Welcome to Caffeine Buddy</h1>
+</div>
+
+
+<h2>Find Drinks near me</h2>
+<!-- <button type="button" class="btn btn-success">Find Drinks!!</button> -->
+<p><%= link_to "Find Drinks!!!", stores_path, class: 'button' %></p>
+
+<form colspan="2" style="width:20%;" action="" method="POST" role="form">
+  <!-- <legend>Enter zip</legend> -->
+
+  <div class="form-group">
+    <label for="">Or Enter Zip Code</label>
+    <input type="text" class="form-control" id="" placeholder="Input field">
+  </div>
+
+
+
+
+  <p><%= link_to "Submit", stores_path, class: 'button' %></p>
+</form>
+

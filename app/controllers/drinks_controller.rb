@@ -1,4 +1,6 @@
 class DrinksController < ApplicationController
+  belongs_to :category
+
   def index
     @drinks = @Drinks.all
   end

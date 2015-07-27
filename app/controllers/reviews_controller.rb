@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+  belongs_to :store
+
     def index
     @reviews = @Review.all
   end
