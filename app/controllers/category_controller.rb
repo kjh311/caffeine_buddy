@@ -1,12 +1,20 @@
 class CategoryController < ApplicationController
-  has_many :drinks
+  # has_many :drinks
 
   def index
-    @categories = @Category.all
+    @categories = Category.all
+  end
+
+  def show
+
+  end
+
+  def edit
+
   end
 
   def  new
-    @category = @Category.new
+    @category = Category.new
   end
 
  def create

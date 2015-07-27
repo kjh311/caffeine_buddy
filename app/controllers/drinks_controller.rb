@@ -1,16 +1,25 @@
 class DrinksController < ApplicationController
-  belongs_to :category
+  # belongs_to :category
 
   def index
-    @drinks = @Drinks.all
+    @drinks = Drink.all
   end
 
+  def edit
+
+  end
+
+  def show
+
+  end
+
+
   def  new
-    @drinks = @Drinks.new
+    @drinks = Drink.new
   end
 
  def create
-  @drinks = Drinks.new(drinks_params)
+  @drinks = Drink.new(drinks_params)
   if @drinks.save
    redirect_to drinks_path
   else

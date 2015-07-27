@@ -1,12 +1,20 @@
 class StoresController < ApplicationController
-  has_many :reviews
+  # has_many :reviews
 
   def index
-    @stores = @Store.all
+    @stores = Store.all
+  end
+
+  def show
+
+  end
+
+  def edit
+
   end
 
   def  new
-    @store = @Store.new
+    @store = Store.new
   end
 
  def create

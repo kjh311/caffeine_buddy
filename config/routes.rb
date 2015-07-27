@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
 
+  root 'sessions#new'
+
+  get 'reviews/index'
+
+  get 'reviews/create'
+
+  get 'reviews/new'
+
   get 'static_pages/home'
 
-root 'sessions#new'
-
-get '/login', to: 'sessions#new'
+  get '/login', to: 'sessions#new'
 
 
 
@@ -13,7 +19,7 @@ resources :sessions, only: [:new, :create, :destroy]
 resources :users
 resources :stores
 resources :drinks
-resources :reviews
+resources :comments
 resources :drink_prices
 resources :category
 resources :static_pages
