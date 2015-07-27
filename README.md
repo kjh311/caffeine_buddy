@@ -2,6 +2,9 @@
 
 This app is designed to help users find the closest / cheapest Energy Drink / Coffee.
 
+Trello Cards / Wireframes and ERD
+https://trello.com/b/DXvwFV2Q/project-2
+
  ##Minimup Viable Product
 
 [ ] "Caffeine Buddy" will find the closest Energy Drink / Coffee to my location, displayed with markers on Google maps as well as a list filtered by distance / cost.
@@ -25,7 +28,7 @@ This app is designed to help users find the closest / cheapest Energy Drink / Co
 
  [ ] As a user I want to be able to search energy drinks individually as well as "2 For.." deals.  (2 Monsters for $2.99).
 
- [] As a user I want to be able to accumulate points when I post / update.  My points will be displayed next to my user name.
+ [ ] As a user I want to be able to accumulate points when I post / update.  My points will be displayed next to my user name.
 
 
  ###Technologies Used
