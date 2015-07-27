@@ -8,5 +8,6 @@ resources :sessions, only: [:new, :create, :destroy]
 
 resources :users
 resources :stores
+resources :drinks
 
 end
