@@ -1,1 +1,32 @@
-<h1>prices index</h1>
+<h1>Listing Stores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<% @drinkprices.each do |drinkprice| %>
+  <tr>
+    <td><%= drinkprice.price %></td>
+    <td><%= drinkprice.store_id %></td>
+    <td><%= drinkprice.drink_id %></td>
+
+
+
+    <td><%= link_to 'Show', drinkprice %></td>
+    <td><%= link_to 'Edit', edit drinkprice_path(drinkprice) %></td>
+    <td><%= link_to 'Destroy', drinkprice, method: :delete,
+                                     data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br>
+
+<%= link_to 'New Drink_price', new_drinkprice_path %>

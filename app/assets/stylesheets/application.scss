@@ -32,6 +32,8 @@ h1, h2{
 #map{
 text-align: center;
 margin: 0 auto;
+display: inline;
+margin-left: 150px;
 }
 
 body{
@@ -42,12 +44,13 @@ body{
 
 #funnypic{
   float: right;
-  margin: 50px;
-  width: 300px;
+  margin-right: 150px;
+
+  width: 250px;
   height: 500px;
-
-  background-size: cover;
-
+  background-repeat: no-repeat;
+  background-size: 85%;
+  display: inline;
 }
 
 #drinkpic{

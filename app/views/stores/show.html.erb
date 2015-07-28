@@ -12,6 +12,20 @@
 <div id="funnypic">
 
 </div>
-
+<div class="container">
+  <button type="button" class="btn btn-success">Get Diretions</button>
+  <%= link_to 'New Drink', new_drink_path %>
+  <ul>
+    <% store.drink.each do |drink| %>
+      <li><strong><%= drink.name %></strong> - $<%= drink.price(store.id)  %></li>
+    <% end %>
+  </ul>
+  <%= link_to 'New Comment', new_comment_path %>
+  <ul>
+    <% store.comment.each do |comment| %>
+      <li><strong><%= comment.name %></strong> - $<%= comment(store.id)  %></li>
+    <% end %>
+  </ul>
+</div>
 
 

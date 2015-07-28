@@ -1,14 +1,14 @@
 class DrinkPricesController < ApplicationController
   def index
-    @drink_prices = DrinkPrice.all
+    @drinkprices = DrinkPrice.all
   end
 
   def edit
-
+    @drinkprice = Drink.find(params[:id])
   end
 
   def show
-
+     @drink_price = Drinkprice.find(params[:id])
   end
 
   def  new
