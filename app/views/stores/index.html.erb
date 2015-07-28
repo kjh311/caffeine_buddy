@@ -32,5 +32,16 @@
 <%= link_to 'New Store', new_store_path %>
 
 
+<!-- List each drink price -->
+<% @stores.each do |store| %>
+  <p>Store: <%= store.name %></p>
+  <ul>
+    <% store.drinks.each do |drink| %>
+      <li><strong><%= drink.name %></strong> - $<%= drink.price(store.id)  %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
 
 
