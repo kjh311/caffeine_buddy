@@ -4,29 +4,29 @@
   <%= link_to 'Drinks', drinks_path %>
 </div>
 
-<h1>New drink</h1>
+<h1>New Drink</h1>
 
 <%= form_for @drink do |f| %>
-<% if @drink.errors.any? %>
-  <div class="error_messages">
-    <h2>Form is invalid</h2>
-    <ul>
-      <% for message in @drink.errors.full_messages %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
+  <% if @drink.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @drink.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
   </div>
-<% end %>
-<div class="field">
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</div>
-<div class="field">
-  <%= f.label :photo_url %>
-  <%= f.text_field :photo_url %>
-</div>
+  <div class="field">
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+  </div>
 
-<div class="actions"><%= f.submit %></div>
+  <div class="actions"><%= f.submit %></div>
 <% end %>
 
 <p><%= link_to "Drinks", drinks_path %></p>

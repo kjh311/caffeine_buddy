@@ -20,7 +20,7 @@ class DrinksController < ApplicationController
   end
 
 
-  def  new
+  def new
     @drink = Drink.new
   end
 
