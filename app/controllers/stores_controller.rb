@@ -32,6 +32,12 @@ class StoresController < ApplicationController
   end
  end
 
+ def maps
+     url = "https://maps.googleapis.com/maps/api/js?key="
+     key = ENV['GOOGLE_MAPS']
+     @endpoint = url + key
+ end
+
   def destroy
     store = Store.find(params[:id])
     store.destroy

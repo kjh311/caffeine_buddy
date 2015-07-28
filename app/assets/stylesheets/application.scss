@@ -16,8 +16,84 @@
  @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-a, a:visited{
-color: red;
+a, a:visited, p, td, th, #field{
+padding: 10px;
+font-size: 20px;
+color: white;
+text-align: center;
+margin: 0 auto;
 }
+
+h1, h2{
+  color: white;
+  text-align: center;
+}
+
+#map{
+text-align: center;
+margin: 0 auto;
+}
+
+body{
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKtYiY4K8XjHta8p_EqtIhEhWGxJ2mG69CL0oz_8J93MLPSY-oJA");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#funnypic{
+  float: right;
+  margin: 50px;
+  width: 300px;
+  height: 500px;
+
+  background-size: cover;
+
+}
+
+#drinkpic{
+  width: 75px;
+  height: 75px;
+}
+
+.funny1{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKYU8yMlFBb0hNb0U&authuser=0&v=1438090774341&sz=w1256-h582")
+}
+
+.funny2{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKRXItNUdELVBQWVk&authuser=0&v=1438090779181&sz=w1256-h582")
+}
+
+.funny3{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKYkl3Y3hrOGMtM0k&authuser=0&v=1438090786874&sz=w1256-h582")
+}
+
+.funny4{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKU3ktaEk5SUF4MHc&authuser=0&v=1438090788286&sz=w1256-h582")
+}
+
+.funny5{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKOG16SkNXVWdxSms&authuser=0&v=1438090789809&sz=w1256-h582")
+}
+
+.funny6{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKTW5mdE1Tb3FEMmc&authuser=0&v=1438090795945&sz=w1256-h582")
+}
+
+.funny7{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKTXhuSW53UUJuelk&authuser=0&v=1438090805559&sz=w1256-h582")
+}
+
+.funny8{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKb2JzTWZuX0dGUmc&authuser=0&v=1438090810046&sz=w1256-h582")
+}
+
+.funny9{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKRVFNczdENGRRcEk&authuser=0&v=1438090803468&sz=w1256-h582")
+}
+
+.funny10{
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKMzI5WllxdlVLZTg&authuser=0&v=1438090799261&sz=w1256-h582")
+}
+
 
 

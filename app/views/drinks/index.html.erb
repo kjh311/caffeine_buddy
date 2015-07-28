@@ -14,7 +14,9 @@
 <% @drinks.each do |drink| %>
   <tr>
     <td><%= drink.name %></td>
-    <td><%= drink.photo_url %></td>
+    <td><%= drink.category %></td>
+    <td><img id="drinkpic" src="<%= drink.photo_url %>" alt=""></td>
+    <td><%= drink.drink_prices %></td>
 
 
     <td><%= link_to 'Show', drink %></td>

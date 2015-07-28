@@ -15,4 +15,43 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+
+  function randompic() {
+    var random = Math.random();
+    if (random < 0.1){
+      $('#funnypic').addClass('funny1');
+    }else if (random < 0.2){
+      $('#funnypic').addClass('funny2');
+    }else if (random < 0.3){
+      $('#funnypic').addClass('funny3');
+    }else if (random < 0.4){
+      $('#funnypic').addClass('funny4');
+    }else if (random < 0.5){
+      $('#funnypic').addClass('funny5');
+    }else if (random < 0.6){
+      $('#funnypic').addClass('funny6');
+    }else if (random < 0.7){
+      $('#funnypic').addClass('funny7');
+    }else if (random < 0.8){
+      $('#funnypic').addClass('funny8');
+    }else if (random < 0.9){
+      $('#funnypic').addClass('funny9');
+    }else
+      $('#funnypic').addClass('funny10');
+}
+randompic();
+
+
+
+
+
+
+
+
+
+});
+
 

@@ -1,26 +1,32 @@
 class DrinksController < ApplicationController
-  # belongs_to :category
+
 
   def index
     @drinks = Drink.all
   end
 
-  def edit
-
+  def show
+    @drink = Drink.find(params[:id])
   end
 
-  def show
+  def edit
+    @drink = Drink.find(params[:id])
+  end
 
+  def update
+    @drink = Drink.find(params[:id])
+    @drink.update_attributes(drink_params)
+    redirect_to drinks_path
   end
 
 
   def  new
-    @drinks = Drink.new
+    @drink = Drink.new
   end
 
  def create
-  @drinks = Drink.new(drinks_params)
-  if @drinks.save
+  @drink = Drink.new(drinks_params)
+  if @drink.save
    redirect_to drinks_path
   else
    render 'new'
@@ -28,6 +34,14 @@ class DrinksController < ApplicationController
  end
 
   def destroy
+    drink = Drink.find(params[:id])
+    drink.destroy
+    redirect_to drinks_path
+  end
 
+  private
+
+  def drink_params
+    params.require(:drink).permit(:name, :photo_url,)
   end
 end
