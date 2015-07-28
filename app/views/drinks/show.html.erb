@@ -1,1 +1,9 @@
-<h1><%= @drink.name %></h1>
+<div class="navbar">
+  <%= link_to 'Home', static_pages_path %>
+  <%= link_to 'Stores', stores_path %>
+  <%= link_to 'Drinks', drinks_path %>
+</div>
+
+<h1><%= @drink.name %></ph1>
+<p><img id="drinkpic" src="<%= @drink.photo_url %>" ></p>
+

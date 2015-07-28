@@ -44,14 +44,5 @@ $( document ).ready(function() {
 }
 randompic();
 
-
-
-
-
-
-
-
-
 });
-
 

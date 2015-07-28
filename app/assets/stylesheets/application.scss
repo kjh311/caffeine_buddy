@@ -45,12 +45,16 @@ body{
 #funnypic{
   float: right;
   margin-right: 150px;
-
   width: 250px;
   height: 500px;
   background-repeat: no-repeat;
-  background-size: 85%;
+  background-size: 100%;
   display: inline;
+}
+
+#login{
+  text-align: center;
+  margin: 0 auto;
 }
 
 #drinkpic{
@@ -97,6 +101,5 @@ body{
 .funny10{
   background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKMzI5WllxdlVLZTg&authuser=0&v=1438090799261&sz=w1256-h582")
 }
-
 
 

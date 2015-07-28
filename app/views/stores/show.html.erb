@@ -1,4 +1,12 @@
+<div class="navbar">
+  <%= link_to 'Home', static_pages_path %>
+  <%= link_to 'Stores', stores_path %>
+  <%= link_to 'Drinks', drinks_path %>
+</div>
+
 <h1><%= @store.name %></h1>
+<p><%= @store.address %></p>
+
 
 <div id="map">
 <img src="https://maps.googleapis.com/maps/api/staticmap?center=1933 S Broadway, Los Angeles, CA 90007&zoom=13&size=600x300&maptype=roadmap
@@ -9,23 +17,23 @@
 
 
 
-<div id="funnypic">
+<div id="funnypic"></div>
+<br>
 
-</div>
+<br>
 <div class="container">
+  <br>
+
+  <br>
   <button type="button" class="btn btn-success">Get Diretions</button>
+  <br>
+  <br>
   <%= link_to 'New Drink', new_drink_path %>
-  <ul>
-    <% store.drink.each do |drink| %>
-      <li><strong><%= drink.name %></strong> - $<%= drink.price(store.id)  %></li>
-    <% end %>
-  </ul>
+  <br>
+  <br>
   <%= link_to 'New Comment', new_comment_path %>
-  <ul>
-    <% store.comment.each do |comment| %>
-      <li><strong><%= comment.name %></strong> - $<%= comment(store.id)  %></li>
-    <% end %>
-  </ul>
+
+
 </div>
 
 

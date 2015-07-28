@@ -1,10 +1,23 @@
+<div class="navbar">
+  <%= link_to 'Home', static_pages_path %>
+  <%= link_to 'Stores', stores_path %>
+  <%= link_to 'Drinks', drinks_path %>
+</div>
+
 <h1>Listing Stores</h1>
+
+
+<%= link_to 'New Store', new_store_path %>
+
+<div class="container">
+
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Address</th>
+      <th>Distance</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,6 +26,8 @@
   <tr>
     <td><%= store.name %></td>
     <td><%= store.address %></td>
+    <td>Distance</td>
+
 
 
 
@@ -26,19 +41,10 @@
 
 <br>
 
-<%= link_to 'New Store', new_store_path %>
-
-
-<!-- List each drink price -->
-<% @stores.each do |store| %>
-  <p>Store: <%= store.name %></p>
-  <ul>
-    <% store.drink.each do |drink| %>
-      <li><strong><%= drink.name %></strong> - $<%= drink.price(store.id)  %></li>
-    <% end %>
-  </ul>
-<% end %>
 
 
 
+
+
+</div>
 
