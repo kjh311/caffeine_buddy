@@ -6,11 +6,17 @@ class StoresController < ApplicationController
   end
 
   def show
-
+    @store = Store.find(params[:id])
   end
 
   def edit
+    @store = Store.find(params[:id])
+  end
 
+  def update
+    @store = Store.find(params[:id])
+    @store.update_attributes(store_params)
+    redirect_to stores_path
   end
 
   def  new
@@ -27,6 +33,14 @@ class StoresController < ApplicationController
  end
 
   def destroy
+    store = Store.find(params[:id])
+    store.destroy
+    redirect_to stores_path
+  end
 
+  private
+
+  def store_params
+    params.require(:store).permit(:name, :address, :latitude, :longitude)
   end
 end

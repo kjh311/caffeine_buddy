@@ -1,5 +1,5 @@
 class CategoryController < ApplicationController
-  # has_many :drinks
+
 
   def index
     @categories = Category.all
