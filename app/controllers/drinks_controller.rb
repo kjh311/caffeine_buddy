@@ -25,7 +25,7 @@ class DrinksController < ApplicationController
   end
 
  def create
-  @drink = Drink.new(drinks_params)
+  @drink = Drink.new(drink_params)
   if @drink.save
    redirect_to drinks_path
   else

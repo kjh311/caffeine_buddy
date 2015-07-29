@@ -4,11 +4,17 @@ class CommentsController < ApplicationController
   end
 
   def edit
-
+    @comment = Comment.find(params[:id])
   end
 
   def show
+    @comment = Comment.find(params[:id])
+  end
 
+  def update
+    @comment = Comment.find(params[:id])
+    @comment.update_attributes(comment_params)
+    redirect_to comments_path
   end
 
   def  new
@@ -18,13 +24,15 @@ class CommentsController < ApplicationController
  def create
   @comment = Comment.new(comment_params)
   if @comment.save
-   redirect_to drink_prices_path
+   redirect_to comment_path
   else
    render 'new'
   end
  end
 
-  def destroy
-
+   def destroy
+    comment = Comment.find(params[:id])
+    comment.destroy
+    redirect_to comments_path
   end
 end

@@ -18,6 +18,22 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
+
+document.getElementById('get_location').onclick = function() {
+  navigator.geolocation.getCurrentPosition(c);
+  return false;
+}
+
+var c = function(pos)  {
+var lat    = pos.coords.latitude,
+    long   = pos.coords.longitude,
+    coords = lat + ', ' + long;
+
+document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + coords +'&z=60&output=embed')
+}
+
+
+
   function randompic() {
     var random = Math.random();
     if (random < 0.1){

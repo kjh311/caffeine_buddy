@@ -9,17 +9,29 @@
 Store.destroy_all
 Drink.destroy_all
 
-cafe, test = Store.create([
+cafe, seven, seree, winchel, nature, kofi = Store.create([
   {
     name: 'Food Haus Cafe',
     address: '2106 S Olive St Los Angles, CA 90007'
   }, {
-    name: 'Test',
-    address: '829 Solar Rd. NW Albuqeruque, NM 87107'
+    name: "7-Eleven",
+    address: '2512 S Figueroa St Los Angeles, CA 90007'
+  }, {
+    name: "Seree's Coffee Shop",
+    address: '2800 S Grand Ave Los Angeles, CA 90007'
+  }, {
+    name: "Winchell's Donut House",
+    address: "2501 S San Pedro St Los Angeles, CA 90011"
+  }, {
+    name: "Nature's Brew",
+    address: "2316 S Union Ave Los Angeles, CA 90007"
+  }, {
+    name: "Kofi",
+    address: "1933 S Broadway Los Angeles, CA 90007"
   }
 ])
 
-monster, red_bull = Drink.create([
+monster, red_bull, frap, amer = Drink.create([
   {
     name: "Monster",
     photo_url: "http://tdsmotorsports.net/main/paintshop%20tools/tds%20decals/m/decals/monster%20can%20large.png"
@@ -27,6 +39,14 @@ monster, red_bull = Drink.create([
   {
     name: "Red Bull",
     photo_url: "http://www.ludumdare.com/compo/wp-content/uploads/2011/12/Energy-Drink-RedBull.png"
+  },
+  {
+    name: "Americano",
+    photo_url: "http://burgerking.s3-website-us-east-1.amazonaws.com/sites/default/files/1406848933_cafe.png"
+  },
+  {
+    name: "Frappuccino",
+    photo_url: "http://www.etna-ct.com/cmsbestanden/%5Cimagecache%5Ca865e286-1490-4680-b0ed-fc0caa87de95.png"
   }
   ])
 
@@ -61,14 +81,12 @@ amp, full_throttle, nos, coffee, cappuchino, espresso, iced_coffee = Drink.creat
   }
 ])
 
-cafe.drinks << monster
-monster.set_price(cafe, 2.50)
-cafe.drinks << amp
-amp.set_price(cafe, 1.99)
-cafe.drinks << full_throttle
-full_throttle.set_price(cafe, 1.99)
-cafe.drinks << nos
-nos.set_price(cafe, 2.50)
+rev = Comment.create([
+  {
+    review: "Kofi is amazing!!!!"
+  }
+])
+
 cafe.drinks << coffee
 coffee.set_price(cafe, 1.75)
 cafe.drinks << cappuchino
@@ -78,10 +96,35 @@ espresso.set_price(cafe, 2.90)
 cafe.drinks << iced_coffee
 iced_coffee.set_price(cafe, 4.50)
 
-test.drinks << monster
-monster.set_price(test, 1.75)
-test.drinks << red_bull
-red_bull.set_price(test, 1.25)
+seven.drinks << monster
+monster.set_price(seven, 1.75)
+seven.drinks << red_bull
+red_bull.set_price(seven, 1.25)
+seven.drinks << amp
+amp.set_price(seven, 1.99)
+seven.drinks << full_throttle
+full_throttle.set_price(seven, 1.99)
+seven.drinks << nos
+nos.set_price(seven, 2.50)
+
+seree.drinks << coffee
+coffee.set_price(seree, 3.00)
+
+kofi.drinks << coffee
+coffee.set_price(kofi, 1.99)
+kofi.drinks << amer
+amer.set_price(kofi, 2.99)
+kofi.drinks << frap
+frap.set_price(kofi, 1.99)
+kofi.drinks << cappuchino
+cappuchino.set_price(kofi, 3.50)
+kofi.drinks << espresso
+espresso.set_price(kofi, 2.90)
+kofi.drinks << iced_coffee
+iced_coffee.set_price(kofi, 4.50)
+
+
+
 
 
 

@@ -1,12 +1,7 @@
-<div class="navbar">
-  <%= link_to 'Home', static_pages_path %>
-  <%= link_to 'Stores', stores_path %>
-  <%= link_to 'Drinks', drinks_path %>
-</div>
 
 <h1>new store</h1>
 
-
+<h3>
 <%= form_for @store do |f| %>
 <% if @store.errors.any? %>
   <div class="error_messages">
@@ -27,8 +22,9 @@
   <%= f.label :address %>
   <%= f.text_field :address %>
 </div>
+<br>
 <div style="margin; 0 auto;" class="actions"><%= f.submit %></div>
 <% end %>
-
+</h3>
 <p><%= link_to "Stores", stores_path %></p>
 

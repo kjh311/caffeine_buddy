@@ -1,16 +1,12 @@
-<div class="navbar">
-  <%= link_to 'Home', static_pages_path %>
-  <%= link_to 'Stores', stores_path %>
-  <%= link_to 'Drinks', drinks_path %>
-</div>
+
 
 <h1>drink edit</h1>
 
-<h2>
+<h3>
  <%= form_for @drink do |f| %>
  <% if @drink.errors.any? %>
-   <div class="error_messages">
- @@ -22,12 +22,13 @@
+ <% end %>
+   <div class="error_messages" >
    <%= f.label :name %>
    <%= f.text_field :name %>
  </div>
@@ -22,8 +18,8 @@
 
 <br>
  <div class="actions"><%= f.submit %></div>
- <% end %>
- <p><%= link_to "Drinks", drinks_path %></p></h2>
+
+ <p><%= link_to "Drinks", drinks_path %></p></h3>
 
 
-
+<% end %>

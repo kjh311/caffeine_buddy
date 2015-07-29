@@ -16,6 +16,34 @@
  @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+
+
+
+body{
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKtYiY4K8XjHta8p_EqtIhEhWGxJ2mG69CL0oz_8J93MLPSY-oJA");
+  background-size: 100%;
+  background-color:black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Gloria Hallelujah',  'Courier', sans-serif, cursive;
+  font-size: 20px;
+}
+
+#buddy{
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+#copy{
+  width: 50px;
+  height: 50px;
+}
+
+#footer{
+  bottom: 0;
+}
+
 #storedrinks{
   margin-right: 50px;
   margin-bottom: 50px;
@@ -27,10 +55,9 @@
 }
 
  h1, h2{
-   color: white;
-   text-align: center;
+  color: white;
+  text-align: center;
 }
-
 
 
 #store_container{
@@ -42,7 +69,6 @@
   text-align: center;
 }
 
-
 a, a:visited, p, td, th, #field, td{
   padding: 10px;
   font-size: 20px;
@@ -51,34 +77,21 @@ a, a:visited, p, td, th, #field, td{
   margin: 0 auto;
 }
 
-
+h3{
+  color:red;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
 
 #store_buttons{
   float: left;
-  margin-left: 200px;
-}
-
-
-
-
-#map{
-  text-align: center;
-  margin: 0 auto;
-  display: inline;
-  margin-left: 150px;
-}
-
-
-
-body{
-  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKtYiY4K8XjHta8p_EqtIhEhWGxJ2mG69CL0oz_8J93MLPSY-oJA");
-  background-size: 100%;
-  background-attachment: fixed;
+  margin-left: 100px;
 }
 
 #funnypic{
   float: right;
-  margin-right: 150px;
+  margin-right: 180px;
   width: 200px;
   height: 300px;
   background-repeat: no-repeat;
@@ -132,4 +145,52 @@ body{
   background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKMzI5WllxdlVLZTg&authuser=0&v=1438090799261&sz=w1256-h582")
 }
 
+#map-canvas{
 
+  float: left;
+  margin-left: 100px;
+  height: 300px;
+  width: 500px;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+#funnypic{
+  width: 0px;
+  height: 0px;
+}
+}
+
+
+
+@media (max-width: 650px) {
+body, a, a:visited, p, td, th, #field, td{
+  font-size: 10px;
+}
+
+#buddy{
+  width: 150px;
+  height: 150px;
+}
+
+.container{
+
+
+}
+
+#map-canvas{
+  width: 300px;
+  height: 250px;
+  margin-left: 50px;
+}
+
+#storetable{
+margin-left: 0;
+}
+
+#store_form{
+  margin-right: 0;
+}
+
+
+}

@@ -1,8 +1,4 @@
-<div class="navbar">
-  <%= link_to 'Home', static_pages_path %>
-  <%= link_to 'Stores', stores_path %>
-  <%= link_to 'Drinks', drinks_path %>
-</div>
+
 
 
 <div class="container">
@@ -12,7 +8,7 @@
 <p><%= @store.address %></p>
 
 <style type="text/css">
-      html, body, #map-canvas { height: 300px; width: 500px;  margin: 0; padding: 0;}
+      html, body, #map-canvas
     </style>
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_KEY'] %>">
@@ -40,7 +36,7 @@
 </script>
 
 
-<div style="margin: 0 auto; float: left; margin-left: 100px;" id="map-canvas"></div>
+<div id="map-canvas"></div>
 
 
 
@@ -49,14 +45,16 @@
 <br>
 </div>
 <br>
+
+
 <div id="store_form" class="container">
   <br>
 <table id="storedrinks">
   <thead>
     <tr>
-      <th><h3>Drink Type</h3></th>
-      <th><h3>Picture</h3></th>
-      <th><h3>Price</h3></th>
+      <th><p>Drink Type</p></th>
+      <th><p>Picture</p></th>
+      <th><p>Price</p></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -66,7 +64,7 @@
   <td><%= drink.name %></td>
   <td><img id="drinkpic" src="<%= drink.photo_url %>"></td>
   <td>$<%= sprintf('%.2f', drink.price(@store.id)) %> </td>
-  <td><%= link_to 'Edit', edit_drink_path(drink) %> </td>
+  <td><button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_drink_path(drink) %> </button></td>
   <td><button type="button" class="btn btn-danger"><%= link_to 'Delete this Drink', drink, method: :delete,
                                     data: { confirm: 'Are you sure?' } %> </td></button>
 
@@ -80,6 +78,7 @@
 
 
   <br>
+  <br>
   <button type="button" class="btn btn-success">Get Diretions to <%= @store.name %></button>
   <br>
   <br>
@@ -92,13 +91,12 @@
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Add Drink to <%= @store.name %>
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
-<%# @drinks.each do |drink| %>
+  <%# @drinks.each do |drink| %>
     <li><%#= drink.name %></li>
 
   </ul>
 </div>
 <form action="" method="POST" class="form-inline" role="form">
-<br>
   <div class="form-group">
     <label class="sr-only" for="">label</label>
     <input type="text" class="form-control" id="" placeholder="Price">
@@ -108,11 +106,40 @@
 <%# end %>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-  <%= link_to 'New Drink', new_drink_path %>
+
   <br>
   <br>
 
    <button type="button" class="btn btn-primary">Add Comment for <%= @store.name %></button>
+
+   <br>
+  <div class="form-group">
+    <label class="sr-only" for="">label</label>
+    <input type="text" class="form-control" id="" placeholder="Comment">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+   <table id="storecomment">
+
+
+  <% @store.comments.each do |drink| %>
+
+  <td><%= comment.name %></td>
+  <td><img id="drinkpic" src="<%= comment.photo_url %>"></td>
+  <td>$<%= sprintf('%.2f', comment(@store.id)) %> </td>
+  <td><%= link_to 'Edit', edit_comment_path(comment) %> </td>
+  <td><button type="button" class="btn btn-danger"><%= link_to 'Delete this Comment', comment, method: :delete,
+                                    data: { confirm: 'Are you sure?' } %> </td></button>
+
+
+  </tr>
+  <% end %>
+
+</table>
+
+
 </div>
 
 </div>
