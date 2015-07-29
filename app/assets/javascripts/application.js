@@ -18,7 +18,6 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-
   function randompic() {
     var random = Math.random();
     if (random < 0.1){

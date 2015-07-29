@@ -16,12 +16,22 @@
  @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-a, a:visited, p, td, th, #field{
-padding: 10px;
-font-size: 20px;
-color: white;
-text-align: center;
-margin: 0 auto;
+a, a:visited, p, td, th, #field, td{
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#store_buttons{
+  float: left;
+  margin-left: 200px;
+}
+
+#storedrinks{
+  margin-right: 300px;
+  float: right;
 }
 
 h1, h2{
@@ -30,10 +40,10 @@ h1, h2{
 }
 
 #map{
-text-align: center;
-margin: 0 auto;
-display: inline;
-margin-left: 150px;
+  text-align: center;
+  margin: 0 auto;
+  display: inline;
+  margin-left: 150px;
 }
 
 
@@ -47,12 +57,11 @@ body{
 #funnypic{
   float: right;
   margin-right: 150px;
-  width: 250px;
-  height: 500px;
+  width: 200px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline;
-
 }
 
 #login{
@@ -66,7 +75,7 @@ body{
 }
 
 .funny1{
-  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKYU8yMlFBb0hNb0U&authuser=0&v=1438090774341&sz=w1256-h582")
+  background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKYTBlbUNhUmVVX2s&authuser=0&v=1438042960955&sz=w1256-h582")
 }
 
 .funny2{
