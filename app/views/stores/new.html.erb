@@ -6,6 +6,7 @@
 
 <h1>new store</h1>
 
+
 <%= form_for @store do |f| %>
 <% if @store.errors.any? %>
   <div class="error_messages">
@@ -21,19 +22,13 @@
   <%= f.label :name %>
   <%= f.text_field :name %>
 </div>
+<br>
 <div class="field">
   <%= f.label :address %>
   <%= f.text_field :address %>
 </div>
-<div class="field">
-  <%= f.label :latitude %>
-  <%= f.text_field :latitude %>
-</div>
-<div class="field">
-  <%= f.label :longitude %>
-  <%= f.text_field :longitude %>
-</div>
-<div class="actions"><%= f.submit %></div>
+<div style="margin; 0 auto;" class="actions"><%= f.submit %></div>
 <% end %>
 
 <p><%= link_to "Stores", stores_path %></p>
+

@@ -6,28 +6,24 @@
 
 <h1>drink edit</h1>
 
+<h2>
+ <%= form_for @drink do |f| %>
+ <% if @drink.errors.any? %>
+   <div class="error_messages">
+ @@ -22,12 +22,13 @@
+   <%= f.label :name %>
+   <%= f.text_field :name %>
+ </div>
+<br>
+ <div class="field">
+   <%= f.label :photo_url %>
+   <%= f.text_field :photo_url %>
+ </div>
 
-<%= form_for @drink do |f| %>
-<% if @drink.errors.any? %>
-  <div class="error_messages">
-    <h2>Form is invalid</h2>
-    <ul>
-      <% for message in @drink.errors.full_messages %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
-<div class="field">
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</div>
-<div class="field">
-  <%= f.label :photo_url %>
-  <%= f.text_field :photo_url %>
-</div>
+<br>
+ <div class="actions"><%= f.submit %></div>
+ <% end %>
+ <p><%= link_to "Drinks", drinks_path %></p></h2>
 
-<div class="actions"><%= f.submit %></div>
-<% end %>
 
-<p><%= link_to "Drinks", drinks_path %></p>
+

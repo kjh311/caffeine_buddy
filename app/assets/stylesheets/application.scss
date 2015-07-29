@@ -16,6 +16,33 @@
  @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+#storedrinks{
+  margin-right: 50px;
+  margin-bottom: 50px;
+  float: right;
+ }
+
+#store_form{
+  margin-bottom: 50px;
+}
+
+ h1, h2{
+   color: white;
+   text-align: center;
+}
+
+
+
+#store_container{
+  postition: absolute;
+  top: 0px;
+}
+
+#login{
+  text-align: center;
+}
+
+
 a, a:visited, p, td, th, #field, td{
   padding: 10px;
   font-size: 20px;
@@ -24,20 +51,15 @@ a, a:visited, p, td, th, #field, td{
   margin: 0 auto;
 }
 
+
+
 #store_buttons{
   float: left;
   margin-left: 200px;
 }
 
-#storedrinks{
-  margin-right: 300px;
-  float: right;
-}
 
-h1, h2{
-  color: white;
-  text-align: center;
-}
+
 
 #map{
   text-align: center;
@@ -64,10 +86,6 @@ body{
   display: inline;
 }
 
-#login{
-  text-align: center;
-  margin: 0 auto;
-}
 
 #drinkpic{
   width: 75px;
