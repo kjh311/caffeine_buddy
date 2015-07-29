@@ -1,7 +1,11 @@
 
 <h1>new store</h1>
 
+<<<<<<< HEAD
 <h3>
+=======
+<h2>
+>>>>>>> 4ff9f34334b9840c44a14e971ab3352d1f4a1071
 <%= form_for @store do |f| %>
 <% if @store.errors.any? %>
   <div class="error_messages">
@@ -23,8 +27,17 @@
   <%= f.text_field :address %>
 </div>
 <br>
+<<<<<<< HEAD
 <div style="margin; 0 auto;" class="actions"><%= f.submit %></div>
 <% end %>
 </h3>
 <p><%= link_to "Stores", stores_path %></p>
 
+=======
+<br>
+
+<div style="margin; 0 auto;" class="actions"><%= f.submit %></div>
+<% end %>
+
+<p><%= link_to "Stores", stores_path %></p></h2>
+>>>>>>> 4ff9f34334b9840c44a14e971ab3352d1f4a1071
