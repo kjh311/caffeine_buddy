@@ -33,11 +33,11 @@ ActiveRecord::Schema.define(version: 20150727192142) do
   end
 
   create_table "drink_prices", force: :cascade do |t|
-    t.integer  "price"
+    t.decimal  "price",      precision: 8, scale: 2
     t.integer  "drink_id"
     t.integer  "store_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
   end
 
   create_table "drinks", force: :cascade do |t|
