@@ -30,8 +30,13 @@ a, a:visited, p, td, th, #field, td{
 }
 
 #storedrinks{
-  margin-right: 300px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   float: right;
+}
+
+#store_form{
+  margin-bottom: 50px;
 }
 
 h1, h2{
@@ -62,6 +67,10 @@ body{
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline;
+}
+#store_container{
+  postition: absolute;
+  top: 0px;
 }
 
 #login{

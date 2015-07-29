@@ -9,6 +9,14 @@ class StoresController < ApplicationController
     @store = Store.find(params[:id])
   end
 
+
+  # # to show drinks in store show page
+  # def show
+  #   @drink = Drink.find(params[:id])
+  # end
+
+
+
   def edit
     @store = Store.find(params[:id])
   end

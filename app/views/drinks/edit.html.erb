@@ -6,7 +6,7 @@
 
 <h1>drink edit</h1>
 
-
+<h2>
 <%= form_for @drink do |f| %>
 <% if @drink.errors.any? %>
   <div class="error_messages">
@@ -22,12 +22,13 @@
   <%= f.label :name %>
   <%= f.text_field :name %>
 </div>
+<br>
 <div class="field">
   <%= f.label :photo_url %>
   <%= f.text_field :photo_url %>
 </div>
-
+<br>
 <div class="actions"><%= f.submit %></div>
 <% end %>
 
-<p><%= link_to "Drinks", drinks_path %></p>
+<p><%= link_to "Drinks", drinks_path %></p></h2>

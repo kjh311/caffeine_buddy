@@ -4,10 +4,11 @@
   <%= link_to 'Drinks', drinks_path %>
 </div>
 
-<h1>Listing Stores</h1>
+<h1>Nearby Stores</h1>
 
 
-<%= link_to 'New Store', new_store_path %>
+<h2><button type="button" class="btn btn-primary"><%= link_to 'New Store', new_store_path %></button></h2>
+
 
 <div class="container">
 
@@ -24,17 +25,17 @@
 
 <% @stores.each do |store| %>
   <tr>
-    <td><%= store.name %></td>
+    <td><button type="button" class="btn btn-success"><%= link_to store.name, store_path(store), method: :get %></button></td>
     <td><%= store.address %></td>
-    <td>Distance</td>
+    <td>Miles</td>
 
 
 
 
-    <td><%= link_to 'Show', store_path(store), method: :get %></td>
+
     <td><%= link_to 'Edit', edit_store_path(store) %></td>
-    <td><%= link_to 'Destroy', store, method: :delete,
-                                     data: { confirm: 'Are you sure?' } %></td>
+    <td><button type="button" class="btn btn-danger"><%= link_to 'Delete', store, method: :delete,
+                                     data: { confirm: 'Are you sure?' } %></button></td>
   </tr>
 <% end %>
 </table>
