@@ -7,20 +7,20 @@ https://trello.com/b/DXvwFV2Q/project-2
 
  ##Minimup Viable Product
 
-[ ] "Caffeine Buddy" will find the closest Energy Drink / Coffee to my location, displayed with markers on Google maps as well as a list filtered by distance / cost.
+[x] "Caffeine Buddy" will find Energy Drink / Coffee stores, displayed with markers on Google maps as well as a list.
 
-[ ]  As a user I want to be able to log in to verify my identity.
+[x]  As a user I want to be able to log in to verify my identity.
 
-[ ] As a user I want to be able to enter my zip code or use a "Find Me" button that will find my location on Google Maps
+[x] As a user I want to be able to use a "Find Me" button that will find my location on Google Maps
 
-[ ] As a user I want to be able to update prices of drinks, as well as add new locations.  Full CRUD.
+[x] As a user I want to be able to update prices of drinks, as well as add new locations.  Full CRUD.
 
 
  ##Icebox Features
 
  [ ] As a user I want to have a drop down menu (alphabetical order) to choose my favorite brand of energy drink / coffee to perform a custom search. Perhaps each drink has a picture icon next to it.
 
- [ ] Once I click on a Google Marker / list result, I will be shown driving directions to destination.
+ [x] Once I click on a Google Marker / list result, I will be shown driving directions to destination.
 
  [ ] Once I click on a Google Marker / list result, I will be shown the user name that created the information, as well as the other options the store has for sale.
 
@@ -36,4 +36,10 @@ https://trello.com/b/DXvwFV2Q/project-2
 
  ###Getting Started / Instalation
 
+ - fork the repo, type `rake db:create`, `rake db:migrate`, `rake db:seed` then `rails s` to start the server.  Type `localhost:3000` into the browser.
+
  ###Bugs
+
+ - Can't figure out how to delete drinks only at a specific store without deleting all drinks with that name.
+
+ -
