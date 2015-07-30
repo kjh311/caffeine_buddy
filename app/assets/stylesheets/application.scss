@@ -14,9 +14,7 @@
  *= require_self
  */
  @import 'bootstrap-sprockets';
-@import 'bootstrap';
-
-
+ @import 'bootstrap';
 
 
 body{
@@ -93,6 +91,11 @@ h3{
 #store_buttons{
   float: left;
   margin-left: 100px;
+}
+
+#store_map{
+  margin: 0 auto;
+  text-align: center;
 }
 
 #funnypic{

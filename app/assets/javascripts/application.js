@@ -48,9 +48,7 @@ $( document ).ready(function() {
 randompic();
 
 // get user location through ip geolocation
-// document.getElementById('get_location').onclick = function() {
-
-  var user_posish = function(){
+var user_posish = function(){
   navigator.geolocation.getCurrentPosition(c);
   return false;
 }
@@ -58,12 +56,14 @@ randompic();
 var c = function(pos)  {
 var lat    = pos.coords.latitude,
     long   = pos.coords.longitude,
-    coords = lat + ', ' + long;
+    user_coords = lat + ', ' + long;
 
-document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + coords +'&z=60&output=embed')
+document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + user_coords +'&z=60&output=embed')
 }
 
 user_posish();
+
+
 
 });
 
