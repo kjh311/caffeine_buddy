@@ -74,14 +74,15 @@
 <div id="store_buttons">
   <br>
   <br>
-  <button type="button" class="btn btn-success">Get Diretions to <%= @store.name %></button>
+  <a href="https://www.google.com/maps?saddr=My+Location&daddr=<%= @store.address %>" target="_blank">Get Diretions to <%= @store.name %> </a>
   <br>
   <br>
-  <%#= link_to 'Add Drink', new_drink_path %>
-
-<div id="red">
 
 
+
+<div id="red" class="add_drink_form">
+
+  <p>Add drink to <%= @store.name %></p>
   <% new_drink_price = DrinkPrice.new %>
   <%= form_for new_drink_price do |f|%>
     <input type="hidden" name="drink_price[store_id]" value="<%=@store.id%>">
@@ -92,54 +93,14 @@
       <% end %>
     <% end %>
   </select>
-    <input type="text" name="drink_price[price]">
+    <input placeholder="Price" type="text" name="drink_price[price]">
     <br>
     <br>
     <div class="actions"><%= f.submit "Add Drink" %></div>
   <% end %>
 
-  </div>
 
 </div>
-  <br>
-  <p>Add Comment for <%= @store.name %></p>
-  <div class="form-group">
-    <label class="sr-only" for="">label</label>
-    <input type="text" class="form-control" id="" placeholder="Comment">
-  </div>
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-   <table id="storecomment">
-
-
-  <%# @store.comments.each do |drink| %>
-
-  <td><%#= comment.review %></td>
-
-  <td><%#= link_to 'Edit', edit_comment_path(comment) %> </td>
-
-
-
-  </tr>
-  <%# end %>
-
-</table>
-
-<ul>
-
-
-  <% @store.comments.each do |drink| %>
-
-    <li><%#= comment.review %></li>
-
-</ul>
-<% end %>
-
-  <br>
-  <br>
-
 
 </div>
 

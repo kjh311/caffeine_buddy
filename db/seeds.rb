@@ -11,13 +11,13 @@ Drink.destroy_all
 User.destroy_all
 
 
-cafe, seven, seree, winchel, nature, kofi = Store.create([
+cafe, chevron, seree, winchel, nature, kofi = Store.create([
   {
     name: 'Food Haus Cafe',
     address: '2106 S Olive St Los Angles, CA 90007'
   }, {
-    name: "7-Eleven",
-    address: '2512 S Figueroa St Los Angeles, CA 90007'
+    name: "Chevron",
+    address: '1516 S Main St Los Angeles, CA 90015'
   }, {
     name: "Seree's Coffee Shop",
     address: '2800 S Grand Ave Los Angeles, CA 90007'
@@ -52,7 +52,7 @@ monster, red_bull, frap, amer = Drink.create([
   }
   ])
 
-amp, full_throttle, nos, coffee, cappuchino, espresso, iced_coffee = Drink.create([
+amp, full_throttle, nos, coffee, cappuchino, espresso, iced_coffee, mocha, tea, five = Drink.create([
   {
     name: "Amp",
     photo_url: "http://i55.tinypic.com/2csjapt.png"
@@ -80,6 +80,18 @@ amp, full_throttle, nos, coffee, cappuchino, espresso, iced_coffee = Drink.creat
   {
     name: "Iced Coffee",
     photo_url: "https://www.inventicoffee.com/wp-content/uploads/2013/01/Iced-Coffee-Glass300x453-300x340.png"
+  },
+  {
+    name: "Cafe Mocha",
+    photo_url: "http://143.95.43.92/images/food/mocha.png"
+  },
+  {
+    name: "Iced Tea",
+    photo_url: "http://www.westsideliquor.com/wp-content/uploads/2013/05/Long-Island-Iced-Tea.png"
+  },
+  {
+    name: "5 Hour Energy",
+    photo_url: "http://static1.squarespace.com/static/5184b2e6e4b0b930f1ca10ca/t/5206a0d2e4b0f6f84d91a7a1/1376166099885/5hour.png"
   }
 ])
 
@@ -98,16 +110,16 @@ espresso.set_price(cafe, 2.90)
 cafe.drinks << iced_coffee
 iced_coffee.set_price(cafe, 4.50)
 
-seven.drinks << monster
-monster.set_price(seven, 1.75)
-seven.drinks << red_bull
-red_bull.set_price(seven, 1.25)
-seven.drinks << amp
-amp.set_price(seven, 1.99)
-seven.drinks << full_throttle
-full_throttle.set_price(seven, 1.99)
-seven.drinks << nos
-nos.set_price(seven, 2.50)
+chevron.drinks << monster
+monster.set_price(chevron, 1.75)
+chevron.drinks << red_bull
+red_bull.set_price(chevron, 1.25)
+chevron.drinks << amp
+amp.set_price(chevron, 1.99)
+chevron.drinks << full_throttle
+full_throttle.set_price(chevron, 1.99)
+chevron.drinks << nos
+nos.set_price(chevron, 2.50)
 
 seree.drinks << coffee
 coffee.set_price(seree, 3.00)
