@@ -2,7 +2,10 @@
 
 <h1>store edit</h1>
 
-<h3 id="edit">
+<div id="red">
+
+
+<div id="edit">
 <%= form_for @store do |f| %>
 <% if @store.errors.any? %>
   <div class="error_messages">
@@ -27,4 +30,7 @@
 <div class="actions"><%= f.submit %></div>
 <% end %>
 
-<p><%= link_to "Stores", stores_path %></p></h3>
+<p><%= link_to "Stores", stores_path %></p>
+
+</div>
+</div>

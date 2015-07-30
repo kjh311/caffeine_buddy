@@ -1,7 +1,7 @@
 
 
 <h1>New Drink .png file prefered</h1>
-<h3>
+<div id="red">
 <%= form_for @drink do |f| %>
   <% if @drink.errors.any? %>
     <div class="error_messages">
@@ -28,6 +28,6 @@
 <% end %>
 
 <p><%= link_to "Drinks", drinks_path %></p>
-</h3>
+</div>
 
 

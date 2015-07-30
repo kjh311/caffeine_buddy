@@ -1,5 +1,10 @@
+ <h1>Welcome to Caffeine Buddy</h1>
+<p>
+<img id="buddy" style="margin: 0 auto;" src="https://drive.google.com/thumbnail?id=0B6z5p82sidMKYUE4TlYySnNBLUU&authuser=0&v=1438229609338&sz=w1255-h582" alt=""></p>
+
+
 <h1>Sign Up</h1>
-<h3>
+<div id="red">
 <%= form_for @user do |f| %>
 <% if @user.errors.any? %>
   <div class="error_messages">
@@ -27,6 +32,6 @@
 </div>
 <br>
 <div class="actions"><%= f.submit %></div>
-</h3>
+</div>
 <% end %>
 

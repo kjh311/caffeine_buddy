@@ -1,5 +1,10 @@
+ <h1>Welcome to Caffeine Buddy</h1>
+<p>
+<img id="buddy" src="https://drive.google.com/thumbnail?id=0B6z5p82sidMKYUE4TlYySnNBLUU&authuser=0&v=1438229609338&sz=w1255-h582" alt=""></p>
+
+
 <h1>Login</h1>
-<h3>
+<div id=red>
   <%= form_tag sessions_path do %>
     <div class="field">
       <%= label_tag :email %>
@@ -14,4 +19,4 @@
     <div class="actions"><%= submit_tag "Log in" %></div>
   <% end %>
 
-  <p><%= link_to "Or Signup!!!!", new_user_path %></p></h3>
+  <p><%= link_to "Or Signup!!!!", new_user_path %></p></div>

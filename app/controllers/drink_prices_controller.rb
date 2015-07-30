@@ -1,10 +1,10 @@
 class DrinkPricesController < ApplicationController
   def index
-    @drinkprices = DrinkPrice.all
+    @drink_prices = DrinkPrice.all
   end
 
   def edit
-    @drinkprice = Drink.find(params[:id])
+    @drink_price = DrinkPrice.find(params[:id])
   end
 
   def show
@@ -25,6 +25,8 @@ class DrinkPricesController < ApplicationController
  end
 
   def destroy
-
+    drink_price = DrinkPrice.find(params[:id])
+    drink_price.destroy
+    redirect_to drink_price_path
   end
 end

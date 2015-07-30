@@ -31,7 +31,7 @@ cafe, seven, seree, winchel, nature, kofi = Store.create([
   }
 ])
 
-monster, red_bull, frap, amer = Drink.create([
+monster, red_bull, frap, amer, test = Drink.create([
   {
     name: "Monster",
     photo_url: "http://tdsmotorsports.net/main/paintshop%20tools/tds%20decals/m/decals/monster%20can%20large.png"
@@ -47,6 +47,10 @@ monster, red_bull, frap, amer = Drink.create([
   {
     name: "Frappuccino",
     photo_url: "http://www.etna-ct.com/cmsbestanden/%5Cimagecache%5Ca865e286-1490-4680-b0ed-fc0caa87de95.png"
+  },
+  {
+    name: "Test",
+    photo_url: "http://ragefaces.s3.amazonaws.com/503cff15ae7c707d56000007/966412cc1838c13ee0349b4a05a17802.png"
   }
   ])
 
@@ -122,8 +126,10 @@ kofi.drinks << espresso
 espresso.set_price(kofi, 2.90)
 kofi.drinks << iced_coffee
 iced_coffee.set_price(kofi, 4.50)
+kofi.drinks << test
+test.set_price(kofi, 111114.50)
 
-
+kofi.comments << rev
 
 
 

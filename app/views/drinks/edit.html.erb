@@ -3,7 +3,7 @@
 <h1>drink edit</h1>
 
 
-<h3>
+<div id="red">
  <%= form_for @drink do |f| %>
  <% if @drink.errors.any? %>
  <% end %>
@@ -20,7 +20,7 @@
 <br>
  <div class="actions"><%= f.submit %></div>
 
- <p><%= link_to "Drinks", drinks_path %></p></h3>
+ <p><%= link_to "Drinks", drinks_path %></p></div>
 
 
 <% end %>

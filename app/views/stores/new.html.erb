@@ -1,43 +1,33 @@
 
-<h1>new store</h1>
 
-
-<h3>
-
-<h2>
-
+<h1>New Store</h1>
+<div id="red">
 <%= form_for @store do |f| %>
-<% if @store.errors.any? %>
-  <div class="error_messages">
-    <h2>Form is invalid</h2>
-    <ul>
-      <% for message in @store.errors.full_messages %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
+  <% if @store.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @store.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
   </div>
-<% end %>
-<div class="field">
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</div>
-<br>
-<div class="field">
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-</div>
-<br>
+  <br>
 
-<div style="margin; 0 auto;" class="actions"><%= f.submit %></div>
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+  <br>
+  <div class="actions"><%= f.submit %></div>
 <% end %>
-</h3>
+
 <p><%= link_to "Stores", stores_path %></p>
+</div>
 
-
-<br>
-
-<div style="margin; 0 auto;" class="actions"><%= f.submit %></div>
-<% end %>
-
-<p><%= link_to "Stores", stores_path %></p></h2>
 

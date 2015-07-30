@@ -17,6 +17,14 @@
  @import 'bootstrap';
 
 
+a, a:visited, p, td, th, #field, td, span{
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
 body{
   background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKtYiY4K8XjHta8p_EqtIhEhWGxJ2mG69CL0oz_8J93MLPSY-oJA");
   background-size: 100%;
@@ -25,6 +33,8 @@ body{
   background-repeat: no-repeat;
   font-family: 'Gloria Hallelujah',  'Courier', sans-serif, cursive;
   font-size: 20px;
+  text-align: center;
+  color: white;
 }
 
 #buddy{
@@ -37,81 +47,6 @@ body{
   width: 50px;
   height: 50px;
 }
-
-#footer{
-  bottom: 0;
-}
-
-#storedrinks{
-  margin-right: 50px;
-  margin-bottom: 50px;
-  float: right;
- }
-
-#store_form{
-  margin-bottom: 50px;
-}
-
-
-
-#store_form{
-  margin-bottom: 50px;
-}
-
-h1, h2{
-  color: white;
-  text-align: center;
-}
-
-
-#store_container{
-  postition: absolute;
-  top: 0px;
-}
-
-#login{
-  text-align: center;
-}
-
-a, a:visited, p, td, th, #field, td{
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-}
-
-h3{
-  color:red;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
-}
-
-#store_buttons{
-  float: left;
-  margin-left: 100px;
-}
-
-#store_map{
-  margin: 0 auto;
-  text-align: center;
-}
-
-#funnypic{
-  float: right;
-  margin-right: 180px;
-  width: 200px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: inline;
-}
-#store_container{
-  postition: absolute;
-  top: 0px;
-}
-
 
 #drinkpic{
   width: 75px;
@@ -158,6 +93,29 @@ h3{
   background-image: url("https://drive.google.com/thumbnail?id=0B6z5p82sidMKMzI5WllxdlVLZTg&authuser=0&v=1438090799261&sz=w1256-h582")
 }
 
+#footer{
+  bottom: 0;
+}
+
+#funnypic{
+  float: right;
+  margin-right: 180px;
+  width: 200px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline;
+}
+
+h1, h2{
+  color: white;
+  text-align: center;
+}
+
+#login{
+  text-align: center;
+}
+
 #map-canvas{
   float: left;
   margin-left: 100px;
@@ -166,13 +124,55 @@ h3{
   padding: 0;
 }
 
+#red{
+  color:red;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#storedrinks{
+  margin-right: 20px;
+  margin-bottom: 50px;
+  float: right;
+ }
+
+#store_container{
+  postition: absolute;
+  top: 0px;
+}
+
+#store_form{
+  margin-bottom: 50px;
+}
+
+#store_form{
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+#store_buttons{
+  float: left;
+  margin-left: 20px;
+}
+
+#store_map{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#store_container{
+  postition: absolute;
+  top: 0px;
+}
+
+
 @media (max-width: 1200px) {
 #funnypic{
   width: 0px;
   height: 0px;
 }
 }
-
 
 
 @media (max-width: 650px) {

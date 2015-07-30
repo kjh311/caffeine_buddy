@@ -47,23 +47,6 @@ $( document ).ready(function() {
 }
 randompic();
 
-// get user location through ip geolocation
-var user_posish = function(){
-  navigator.geolocation.getCurrentPosition(c);
-  return false;
-}
-
-var c = function(pos)  {
-var lat    = pos.coords.latitude,
-    long   = pos.coords.longitude,
-    user_coords = lat + ', ' + long;
-
-document.getElementById('google_map').setAttribute('src', 'https://maps.google.com/?q=' + user_coords +'&z=60&output=embed')
-}
-
-user_posish();
-
-
 
 });
 
