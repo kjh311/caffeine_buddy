@@ -8,7 +8,7 @@
 
 Store.destroy_all
 Drink.destroy_all
-User.destroy_all
+
 
 
 cafe, chevron, seree, winchel, nature, kofi = Store.create([
@@ -52,7 +52,7 @@ monster, red_bull, frap, amer = Drink.create([
   }
   ])
 
-amp, full_throttle, nos, coffee, cappuchino, espresso, iced_coffee, mocha, tea, five = Drink.create([
+amp, full_throttle, nos, coffee, cappuchino, espresso, iced_coffee, mocha, tea, five, coke, dr, sprite = Drink.create([
   {
     name: "Amp",
     photo_url: "http://i55.tinypic.com/2csjapt.png"
@@ -92,6 +92,18 @@ amp, full_throttle, nos, coffee, cappuchino, espresso, iced_coffee, mocha, tea, 
   {
     name: "5 Hour Energy",
     photo_url: "http://static1.squarespace.com/static/5184b2e6e4b0b930f1ca10ca/t/5206a0d2e4b0f6f84d91a7a1/1376166099885/5hour.png"
+  },
+  {
+    name: "Coke",
+    photo_url: "http://icons.iconarchive.com/icons/michael/coke-pepsi/512/Coca-Cola-Can-icon.png"
+  },
+  {
+    name: "Dr. Peppar",
+    photo_url: "http://i175.photobucket.com/albums/w125/Miss-Brownie/DrPepperCan.png"
+    },
+  {
+    name: "Sprite",
+    photo_url: "http://assets.coca-colacompany.com/17/74/00ecfb1c468b838f175189dbb7bc/sprite-can-small.png"
   }
 ])
 
