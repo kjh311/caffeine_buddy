@@ -8,6 +8,15 @@
 
 Store.destroy_all
 Drink.destroy_all
+User.destroy_all
+
+User.create([
+  {
+  email: "kjh311@email.com",
+  password: "asdf",
+  password_confirmation: "asd"
+  }
+  ])
 
 cafe, seven, seree, winchel, nature, kofi = Store.create([
   {
