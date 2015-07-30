@@ -31,7 +31,8 @@
   <%= f.password_field :password_confirmation %>
 </div>
 <br>
-<button type="button" class="btn btn-primary"><%= link_to "Submit", static_pages_path, class: 'button' %></button>
+<%= f.submit "Submit" %>
+<!-- <button type="button" class="btn btn-primary"><%#= link_to "Submit", class: 'button' %></button> -->
 </div>
 <% end %>
 

@@ -7,4 +7,10 @@ class User < ActiveRecord::Base
   :latitude => :lat, :longitude => :lon
  after_validation :geocode
 
+ def ip_address
+  require 'socket'
+  Socket::getaddrinfo(Socket.gethostname,"echo",Socket::AF_INET)[0][3]
+ end
+
 end
+
