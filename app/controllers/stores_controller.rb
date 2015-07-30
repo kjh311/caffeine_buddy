@@ -19,6 +19,7 @@ class StoresController < ApplicationController
 
   def edit
     @store = Store.find(params[:id])
+    @drink_price = DrinkPrice.find(params[:id])
   end
 
   def update

@@ -61,7 +61,7 @@
   <td><img id="drinkpic" src="<%= drink.photo_url %>"></td>
   <td>$ <%= sprintf('%.2f', drink.price(@store.id)) %> </td>
 
-  <td><button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_drink_price_path %> </button></td>
+  <td><button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_drink_price_path(drink.drink_price(@store.id)) %> </button></td>
   <td><button type="button" class="btn btn-danger"><%= link_to 'Delete this Drink', drink_price_path, method: :delete,
                                     data: { confirm: 'Are you sure?' } %> </td></button>
 
@@ -79,31 +79,28 @@
   <br>
   <%#= link_to 'Add Drink', new_drink_path %>
 
+<div id="red">
 
 
-  <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Add Drink to <%= @store.name %>
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
+  <% new_drink_price = DrinkPrice.new %>
+  <%= form_for new_drink_price do |f|%>
+    <input type="hidden" name="drink_price[store_id]" value="<%=@store.id%>">
+    <select class="form-control select" name="drink_price[drink_id]" id="drink_price_drink_id">
+    <% Drink.all.each do |d| %>
+      <% unless @store.drinks.include?(d) %>
+        <option value="<%=d.id%>"><%= d.name %></option>
+      <% end %>
+    <% end %>
+  </select>
+    <input type="text" name="drink_price[price]">
+    <br>
+    <br>
+    <div class="actions"><%= f.submit "Add Drink" %></div>
+  <% end %>
 
-  <%# @drinks.each do |drink| %>
-
-    <li><%#= drink.name %></li>
-
-  </ul>
-</div>
-<form action="" method="POST" class="form-inline" role="form">
-
-  <div class="form-group">
-    <label class="sr-only" for="">label</label>
-    <input type="text" class="form-control" placeholder="Price">
   </div>
 
-
-<%# end %>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-  <br>
+</div>
   <br>
   <p>Add Comment for <%= @store.name %></p>
   <div class="form-group">

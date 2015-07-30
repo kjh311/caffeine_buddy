@@ -19,4 +19,13 @@ class Drink < ActiveRecord::Base
     end
   end
 
+   def drink_price(store_id)
+    drink_price = DrinkPrice.find_by(drink: self, store_id: store_id)
+    if drink_price
+      drink_price
+    else
+      nil
+    end
+  end
+
 end
