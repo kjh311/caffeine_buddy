@@ -1,5 +1,4 @@
 class StoresController < ApplicationController
-  # has_many :reviews
 
   def index
     @stores = Store.all

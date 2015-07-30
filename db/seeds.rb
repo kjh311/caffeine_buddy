@@ -99,7 +99,7 @@ amp, full_throttle, nos, coffee, cappuchino, espresso, iced_coffee, mocha, tea, 
   },
   {
     name: "Dr. Peppar",
-    photo_url: "http://i175.photobucket.com/albums/w125/Miss-Brownie/DrPepperCan.png"
+    photo_url: "http://dc716.4shared.com/img/vN_Md_uV/s3/12146245618/Dr_Pepper"
     },
   {
     name: "Sprite",

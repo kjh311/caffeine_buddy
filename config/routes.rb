@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'secret/public_info'
+
+  get 'secret/secret'
+
   root 'sessions#new'
 
   get 'reviews/index'
@@ -11,8 +15,6 @@ Rails.application.routes.draw do
   get 'static_pages/home'
 
   get '/login', to: 'sessions#new'
-
-
 
 resources :sessions, only: [:new, :create, :destroy]
 

@@ -61,8 +61,8 @@
   <td><img id="drinkpic" src="<%= drink.photo_url %>"></td>
   <td>$ <%= sprintf('%.2f', drink.price(@store.id)) %> </td>
 
-  <td><button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_drink_price_path(drink.drink_price(@store.id)) %> </button></td>
-  <td><button type="button" class="btn btn-danger"><%= link_to 'Delete this Drink', drink_price_path, method: :delete,
+  <td><button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_drink_price_path(drink.drink_price(@store.id)) %> </button></td>
+  <td><button type="button" class="btn btn-danger"><%= link_to 'Delete this Drink', drink_price_path(drink.drink_price(@store.id)), method: :delete,
                                     data: { confirm: 'Are you sure?' } %> </td></button>
 
   </tr>
