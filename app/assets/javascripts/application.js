@@ -19,9 +19,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
 
-
-
-
+// random picture shows on store show page
   function randompic() {
     var random = Math.random();
     if (random < 0.1){

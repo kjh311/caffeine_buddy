@@ -9,8 +9,6 @@
 Store.destroy_all
 Drink.destroy_all
 
-
-
 cafe, chevron, seree, winchel, nature, kofi = Store.create([
   {
     name: 'Food Haus Cafe',
@@ -148,7 +146,6 @@ kofi.drinks << espresso
 espresso.set_price(kofi, 2.90)
 kofi.drinks << iced_coffee
 iced_coffee.set_price(kofi, 4.50)
-
 
 kofi.comments << rev
 

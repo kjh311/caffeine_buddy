@@ -1,6 +1,5 @@
 class CategoryController < ApplicationController
 
-
   def index
     @category = Category.all
   end
@@ -18,7 +17,6 @@ class CategoryController < ApplicationController
     @category.update_attributes(drink_params)
     redirect_to drinks_path
   end
-
 
   def  new
     @category = Category.new

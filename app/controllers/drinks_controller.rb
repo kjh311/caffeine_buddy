@@ -1,7 +1,6 @@
 class DrinksController < ApplicationController
   before_action :authenticate
 
-
   def index
     @drinks = Drink.all
   end
@@ -19,7 +18,6 @@ class DrinksController < ApplicationController
     @drink.update_attributes(drink_params)
     redirect_to drinks_path
   end
-
 
   def new
     @drink = Drink.new
