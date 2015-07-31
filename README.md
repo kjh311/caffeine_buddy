@@ -45,3 +45,7 @@ https://trello.com/b/DXvwFV2Q/project-2
  - Would like to display all nearby stores within a certain distance on the store index page.
 
  - Would like to make it so when you sign up it logs you in instead of making you log in again.
+
+ - Search by zipcode doesn't work yet
+
+ - would like to add comment section for each specific store
