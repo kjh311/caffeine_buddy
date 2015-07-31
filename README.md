@@ -42,4 +42,4 @@ https://trello.com/b/DXvwFV2Q/project-2
 
  - Can't figure out how to delete drinks only at a specific store without deleting all drinks with that name.
 
- -
+ - Would like to display all nearby stores within a certain distance on the store index page.
