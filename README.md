@@ -32,20 +32,28 @@ https://trello.com/b/DXvwFV2Q/project-2
 
 
  ###Technologies Used
- This app uses Ruby on Rails with Postgres, HTML, CSS, JAVASCRIPT, and JQUERY.
+ This app uses Ruby on Rails with Postgres, HTML, CSS (Bootstrap), JAVASCRIPT, and JQUERY.
 
  ###Getting Started / Instalation
 
- - fork the repo, type `rake db:create`, `rake db:migrate`, `rake db:seed` then `rails s` to start the server.  Type `localhost:3000` into the browser.
+ - fork the repo, type `rake db:create`, `rake db:migrate`, `rake db:seed`, `bundle install`, then `rails s` to start the server.  Type `localhost:3000` into the browser.
 
- ###Bugs
+ ###Bugs and TO DO LIST
 
  - Can't figure out how to delete drinks only at a specific store without deleting all drinks with that name.
 
- - Would like to display all nearby stores within a certain distance on the store index page.
+ - Would like to display all nearby stores within a certain distance on the store index MAP.
 
  - Would like to make it so when you sign up it logs you in instead of making you log in again.
 
  - Search by zipcode doesn't work yet
 
  - would like to add comment section for each specific store
+
+ - Make it so user can't click on HOME header button before login.
+
+ - Better responsive design on cell phone.
+
+ - Add search by Drink Type on Store index.
+
+ - List stores by Distance / Cost
