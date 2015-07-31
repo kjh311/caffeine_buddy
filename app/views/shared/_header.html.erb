@@ -4,7 +4,7 @@
   <%= link_to 'Home', static_pages_path %>
   <%= link_to 'Stores', stores_path %>
   <div id="logout">
-  <%= link_to 'Logout', root_path %>
+  <%= link_to 'Logout', logout_path, method: :delete, data: {confirm: "Are you sure?"} %>
   </div>
 
 </div>
