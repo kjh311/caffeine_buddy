@@ -1,4 +1,5 @@
 class StoresController < ApplicationController
+  before_action :authenticate
 
   def index
     @stores = Store.all
@@ -10,7 +11,7 @@ class StoresController < ApplicationController
 
   def edit
     @store = Store.find(params[:id])
-    @drink_price = DrinkPrice.find(params[:id])
+    # @drink_price = DrinkPrice.find(params[:id])
   end
 
   def update

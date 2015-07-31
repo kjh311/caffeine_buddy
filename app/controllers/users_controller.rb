@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :authenticate, only: :edit
 
  def index
   @users = User.all

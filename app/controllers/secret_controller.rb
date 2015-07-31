@@ -1,5 +1,5 @@
 class SecretController < ApplicationController
-  before_action :authenticate, only: :secret, :store
+  before_action :authenticate, only: :secret
 
   def public_info
     render text: "You can see this text because the controller method is not protected by a before_action in the controller"

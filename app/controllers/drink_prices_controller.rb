@@ -1,4 +1,6 @@
 class DrinkPricesController < ApplicationController
+  before_action :authenticate
+
   def index
     @drink_prices = DrinkPrice.all
   end

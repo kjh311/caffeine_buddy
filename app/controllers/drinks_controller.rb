@@ -1,4 +1,5 @@
 class DrinksController < ApplicationController
+  before_action :authenticate
 
 
   def index
