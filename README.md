@@ -57,3 +57,5 @@ https://trello.com/b/DXvwFV2Q/project-2
  - Add search by Drink Type on Store index.
 
  - List stores by Distance / Cost
+
+ - Download images to Google Drive and link to them
