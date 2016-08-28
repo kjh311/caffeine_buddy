@@ -2,6 +2,8 @@
 
 This app is designed to help users find the closest / cheapest Energy Drink / Coffee.
 
+![site](site.png)
+
 Trello Cards / Wireframes and ERD
 https://trello.com/b/DXvwFV2Q/project-2
 
